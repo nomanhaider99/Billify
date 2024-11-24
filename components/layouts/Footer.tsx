@@ -16,7 +16,6 @@ const Footer = () => {
             <div className='flex flex-col gap-1'>
                 <div className='text-white'>Billify Services</div>
                 <div className='text-white'>Hire</div>
-                <div className='text-white'>For Providers</div>
             </div>
             <div>
                 <CustomButton

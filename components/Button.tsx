@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({ text, fullyRounded, outline, icon: Icon
                 outline ? 'bg-white' : 'bg-darkblue'
             } ${outline ? 'border-[0.5px]' : 'border-none'} ${
                 outline ? 'border-darkblue' : ''
-            } ${outline ? 'text-darkblue' : 'text-white'} font-semibold flex items-center gap-2 cursor-pointer`}
+            } ${outline ? 'text-darkblue' : 'text-white'} font-semibold flex items-center justify-center gap-1 cursor-pointer`}
         >
             {text}
             {Icon && (<Icon size={18} color={outline ? '#2f29c4' : '#fff'} />)}

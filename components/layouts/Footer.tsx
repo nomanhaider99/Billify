@@ -27,7 +27,7 @@ const Footer = () => {
             <div>
                 <Button 
                     variant='outline'
-                    className='border-[0.5px] border-white bg-transparent text-white'
+                    className='border-[0.5px] w-[20vw] border-white bg-transparent text-white'
                 >
                     Start Now
                 </Button>

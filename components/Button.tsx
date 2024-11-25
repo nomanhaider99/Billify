@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({ text, fullyRounded, outline, icon: Icon
             } ${outline ? 'text-darkblue' : 'text-white'} font-semibold flex items-center gap-2 cursor-pointer`}
         >
             {text}
-            {Icon && <Icon size={18} color={outline ? '#2f29c4' : '#fff'} />}
+            {Icon && (<Icon size={18} color={outline ? '#2f29c4' : '#fff'} />)}
         </div>
     );
 };

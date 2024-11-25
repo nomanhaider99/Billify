@@ -41,7 +41,6 @@ export const dmeDetail = (
                 <AccordionTrigger className="text-darkblue">What is DME?</AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-2 text-lightblue">
                     <div>Durable Medical Equipment (DME) is a therapeutic item that is prescribed by the physicians to patients that are suffering from a certain medical condition. Beyond reasonable medical needs or necessity, a provider cannot offer these items before following a comprehensive DME billing services process.</div>
-                    <div>CPAP, Nebulizers, kidney machines can be some of the examples of Durable Medical Equipment. A major chunk of Durable Medical Equipment is usually aimed at extending therapeutics relief for patients with a long term critical condition. Items under DME are durable for an extended period of operations. Hence, billing services for DME manufacturers require specialized intervention.</div>
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">

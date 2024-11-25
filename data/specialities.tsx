@@ -32,7 +32,7 @@ const revenueCycleManagementPoints = (
 export const dmeDetail = (
     <div className="px-4 flex flex-col gap-4 text-zinc-600">
         <div>
-            <p>Today finding an efficient way to bill durable medical equipment (DME) is crucial for the healthcare sector’s financial stability. As DME covers a vast range of DME devices – starting from oxygen equipment, wheelchairs, crutches blood testing strips and more it is very essential for DME billers to understand that every DME code is different and so are DME guidelines.   This specialized field of billing in fact involves intricate regulations, constantly changing payer policies, and meticulous documentation requirements and regulations. Furthermore, as DME means a varied assortment of devices and equipment used under prescription from healthcare professionals or physicians in assisting patients in their recovery or managing chronic illness; its billing operation demands more attention.</p>
+            <p>Today finding an efficient way to bill durable medical equipment (DME) is crucial for the healthcare sector’s financial stability. As DME covers a vast range of DME devices – starting from oxygen equipment, wheelchairs, crutches blood testing strips and more it is very essential for DME billers to understand that every DME code is different and so are DME guidelines.</p>
         </div>
         {/* Accordians */}
         <div className="px-5">

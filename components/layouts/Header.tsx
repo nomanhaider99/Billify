@@ -1,10 +1,18 @@
-import React from 'react';
+'use client'
+import React, { useCallback, useState } from 'react';
 import Logo from '../ui/Logo';
 import NavLinks from '../ui/NavLinks';
 import Button from '@/components/Button';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaBars } from 'react-icons/fa';
+import Menu from './Menu';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const toggleMenu = useCallback(() => {
+    setIsOpen(!isOpen);
+  }, [isOpen, setIsOpen]);
+
   return (
     <div className="w-full sticky top-0 z-50 bg-white flex justify-between items-center md:py-6 py-4 md:px-10 px-4 border-b-[2px] border-zinc-400/10 shadow-sm">
       {/* Logo */}
@@ -16,8 +24,17 @@ const Header = () => {
         <NavLinks />
       </div>
       {/* Buttons & Others */}
-      <div className=''>
-        <Button text="Start Billify" icon={FaArrowRight} fullyRounded />
+      <div className='hidden md:block'>
+        <Button
+          text="Start Billify"
+          icon={FaArrowRight}
+          fullyRounded
+        />
+      </div>
+      <div className='md:hidden block'>
+        <Menu
+          opener={FaBars}
+        />
       </div>
     </div>
   );

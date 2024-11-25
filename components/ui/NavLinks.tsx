@@ -6,7 +6,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const NavLinks = () => { 
   return (
-    <div className='w-full flex items-center gap-6 text-[16px] text-zinc-800'>
+    <div className='w-full flex md:flex-row flex-col md:items-center gap-6 text-[16px] text-zinc-800'>
         {
             linksData.map((item, index) => (
                 <Link

@@ -1,4 +1,4 @@
-import client from "@/lib/sanity";
+import { client } from "@/sanity/lib/client";
 import { HomepageTypes } from "@/types/data";
 
 const query = `{

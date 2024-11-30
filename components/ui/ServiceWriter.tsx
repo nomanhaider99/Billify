@@ -16,8 +16,6 @@ const ServiceWriter = () => {
         callData();
     }, [ setData ])
 
-    console.log(data?.services);
-
     return (
         <Typewriter
             words={data?.services as any}

@@ -1,11 +1,26 @@
 'use client'
-import React from 'react'
+import getHomepageData from '@/app/actions/HomepageData';
+import { HomepageTypes } from '@/types/data';
+import React, { useEffect, useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 
 const ServiceWriter = () => {
+    const [data, setData] = useState<HomepageTypes>();
+
+    useEffect(() => {
+        const callData = async () => {
+            const data = await getHomepageData();
+            setData(data);
+        }
+
+        callData();
+    }, [ setData ])
+
+    console.log(data?.services);
+
     return (
         <Typewriter
-            words={['DME', 'HME', 'VR ASSISTANT', 'VR SCRIBE', 'URGENT BILLING', 'RADIOLOGY','CARDIOLOGY', 'HEALTH SYSTEMS', 'HOSPITAL AR']}
+            words={data?.services as any}
             loop
         />
     )

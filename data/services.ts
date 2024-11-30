@@ -1,32 +1,42 @@
 export const servicesData = [
     {
-        text: 'DME'
+        text: 'DME',
+        route: '/services/dme-billing'
     },
     {
-        text: 'Prior Authorization'
+        text: 'Prior Authorization',
+        route: '/services/prior-authorization'
     },
     {
-        text: 'Medical Coding'
+        text: 'Medical Coding',
+        route: '/services/medical-coding'
     },
     {
-        text: 'Claims Management'
+        text: 'Claims Management',
+        route: '/services/claims-management'
     },
     {
-        text: 'Insurance Verification'
+        text: 'Insurance Verification',
+        route: '/services/insurance-verification'
     },
     {
-        text: 'Billing and Collections'
+        text: 'Billing and Collections',
+        route: '/services/billing-and-collections'
     },
     {
-        text: 'Medical Billing Compliance'
+        text: 'Medical Billing Compliance',
+        route: '/services/medical-billing-compliance'
     },
     {
-        text: 'Revenue Cycle Management'
+        text: 'Revenue Cycle Management',
+        route: '/services/revenue-cycle-management'
     },
     {
-        text: 'Patient Billing Support'
+        text: 'Patient Billing Support',
+        route: '/services/patient-billing-support'
     },
     {
-        text: 'Coding Audits'
+        text: 'Coding Audits',
+        route: '/services/coding-audits'
     }
 ];

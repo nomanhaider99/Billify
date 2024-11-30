@@ -29,6 +29,7 @@ const Header = () => {
           text="Start Billify"
           icon={FaArrowRight}
           fullyRounded
+          outline
         />
       </div>
       <div className='md:hidden block'>

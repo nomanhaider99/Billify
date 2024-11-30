@@ -4,33 +4,15 @@ export const service = {
     title: 'Service',
     fields: [
         {
-            name: 'title',
-            title: 'Title',
-            type: 'string',
-        },
-        {
-            name: 'description',
-            title: 'Description',
-            type: 'string',
-        },
-        {
-            name: 'points',
-            title: 'Points',
+            name: 'service',
+            title: 'Service',
             type: 'array',
             of: [
                 {
-                    type: 'object',
-                    fields: [
-                        {
-                            name: 'point',
-                            title: 'Point',
-                            type: 'string',
-                            description: 'Add a key point or detail about the service.',
-                        },
-                    ],
-                },
-            ],
-            description: 'Add multiple key points or features of the service.',
-        },
+                    type: 'string',
+                    title: 'Service Name'
+                }
+            ]
+        }
     ],
 };

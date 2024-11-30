@@ -12,3 +12,6 @@ export interface HomepageTypes {
         }
     } 
 }
+export interface ServicesData {
+    services: string[]
+}

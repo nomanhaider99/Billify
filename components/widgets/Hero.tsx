@@ -28,7 +28,7 @@ const Hero = () => {
       <div className='md:w-[60%] w-full'>
         <Image
           alt=''
-          src={data?.image.asset.url as any}
+          src={HeroImage}
           height={600}
           width={800}
         />

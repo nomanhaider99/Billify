@@ -1,6 +1,6 @@
 import { linksData } from '@/data/links'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 import ServicesDrop from './ServicesDrop'
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -11,7 +11,7 @@ const NavLinks = () => {
             linksData.map((item, index) => (
                 <Link
                     key={index}
-                    href={item.route}
+                    href={item.link == "Services" ? '' : item.route}
                 >
                     {item.link == 'Services' ? (
                         <div 

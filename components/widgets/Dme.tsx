@@ -14,7 +14,7 @@ const Dme = () => {
       <div className='flex flex-col gap-2'>
         <div className='flex items-center gap-1'>
           <div className='w-2 h-20 md:block hidden bg-black'></div>
-          <div className='md:text-[4rem] text-[3rem] leading-none tracking-tight font-medium text-darkblue'>DME Billing Services</div>
+          <div className='md:text-[64px] text-[3rem] leading-none tracking-tight font-extrabold text-darkblue'>DME Billing Services</div>
         </div>
         {/* Paras */}
         <div className='flex flex-col gap-2 text-zinc-600 text-justify'>

@@ -14,6 +14,7 @@ export default {
   			lightblue: '#6d69d6',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+			heading: 'rgb(36, 34, 62)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

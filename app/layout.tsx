@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Figtree, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 
-const font = Figtree({
+const font = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900']
+  weight: ['200', '300', '400', '500', '600', '700', '800',]
 })
 
 export const metadata: Metadata = {

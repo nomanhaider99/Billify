@@ -1,44 +1,52 @@
 'use client'
-import React, { useCallback, useState } from 'react';
-import Logo from '../ui/Logo';
-import NavLinks from '../ui/NavLinks';
-import Button from '@/components/Button';
-import { FaArrowRight, FaBars } from 'react-icons/fa';
-import Menu from './Menu';
+import React from 'react'
+import Box from '../ui/Box'
+import { NotebookPen } from 'lucide-react'
+import Button from '../Button'
+import NavLinks from '../ui/NavLinks'
+import { Menu } from 'lucide-react'
+import NavMenu from './Menu'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
-  const toggleMenu = useCallback(() => {
-    setIsOpen(!isOpen);
-  }, [isOpen, setIsOpen]);
-
   return (
-    <div className="w-full sticky top-0 z-50 bg-white flex justify-between items-center md:py-6 py-4 md:px-10 px-4 border-b-[2px] border-zinc-400/10 shadow-sm">
-      {/* Logo */}
-      <div>
-        <Logo />
+    <div className='w-full flex justify-between items-center px-6 md:px-16 lg:px-32 py-4'>
+      {/* Logo & Tabs */}
+      <div className='flex items-center gap-3'>
+        {/* LOGO */}
+        <Box>
+          <div className='flex items-center gap-2'>
+            <NotebookPen />
+            <div className='text-xl font-bold'>Billify</div>
+          </div>
+        </Box>
+
+        {/* NavLinks (visible on md+) */}
+        <div className='hidden md:block'>
+          <Box>
+            <div className='flex gap-4 text-md text-heading'>
+              <NavLinks />
+            </div>
+          </Box>
+        </div>
       </div>
-      {/* Links */}
-      <div className='hidden md:block'>
-        <NavLinks />
-      </div>
-      {/* Buttons & Others */}
-      <div className='hidden md:block'>
-        <Button
-          text="Start Billify"
-          icon={FaArrowRight}
-          fullyRounded
-          outline
-        />
-      </div>
-      <div className='md:hidden block'>
-        <Menu
-          opener={FaBars}
-        />
+
+      {/* Right Buttons */}
+      <div className='flex items-center gap-3'>
+        {/* Auth Buttons (hidden on small screens) */}
+        <div className='hidden md:flex gap-3'>
+          <Button text='Register' outline />
+          <Button text='Login' />
+        </div>
+
+        {/* Menu button (visible only on mobile) */}
+        <div className='md:hidden'>
+          <Box
+            children={<NavMenu opener={Menu as any} />}
+           />
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

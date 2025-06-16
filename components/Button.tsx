@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({ text, fullyRounded, outline, icon: Icon
                         transition-colors before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-darkblue 
                         before:transition-all before:duration-200 before:origin-bottom before:z-[-1] 
                         hover:before:h-full ${isWhiteOnHover ? 'hover:text-white' : 'hover:text-darkblue'}`
-                    : 'bg-darkblue text-white'
+                    : 'bg-gradient-to-br from-darkblue to-lightblue text-white'
             } flex items-center justify-center gap-1`}
         >
             {text}

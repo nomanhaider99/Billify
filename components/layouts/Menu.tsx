@@ -17,7 +17,7 @@ interface MenuProps {
   opener: IconType;
 }
 
-const Menu: React.FC<MenuProps> = ({ opener: Icon }) => {
+const NavMenu: React.FC<MenuProps> = ({ opener: Icon }) => {
   return (
     <Sheet>
       <SheetTrigger>
@@ -42,4 +42,4 @@ const Menu: React.FC<MenuProps> = ({ opener: Icon }) => {
   );
 };
 
-export default Menu;
+export default NavMenu;

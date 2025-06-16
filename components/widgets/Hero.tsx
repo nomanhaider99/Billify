@@ -21,7 +21,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className='w-full min-h-screen flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-10 lg:px-20 pt-12'>
+    <div className='w-full min-h-screen flex flex-col md:flex-row justify-between px-4 sm:px-6 md:px-10 lg:px-20 pt-12'>
       
       {/* Left Shadow */}
       <div className='hidden md:block md:w-[10%]'>
